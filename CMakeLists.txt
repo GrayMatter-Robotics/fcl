@@ -356,9 +356,10 @@ if(NOT FCL_BUILD_TESTS STREQUAL "DEFAULT")
   unset(_BUILD_TESTING)
 endif()
 
-if(BUILD_TESTING AND NOT FCL_HIDE_ALL_SYMBOLS)
-    add_subdirectory(test)
-endif()
+# if(BUILD_TESTING AND NOT FCL_HIDE_ALL_SYMBOLS)
+#   message("BUILDING TESTS")
+#     add_subdirectory(test)
+# endif()
 
 #===============================================================================
 # API documentation using Doxygen
